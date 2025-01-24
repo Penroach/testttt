@@ -1,0 +1,637 @@
+@charset "utf-8";
+@import "https://unpkg.com/ress/dist/ress.min.css";
+/*---------------------profile---------------------------*/
+* {
+    box-sizing: border-box;
+}
+
+.profile-page {
+    background: #FFF6E4;
+    color: #AA4137;
+}
+
+.profile-page main{
+    width: 100%;
+    margin: 80px auto;
+    padding-left: 80px;
+    padding-right: 80px;
+    background: #FFF6E4;
+    border-radius: 20px;
+    color: #AA4137;
+    justify-content: center;
+    align-items: center;
+}
+
+.footpro {
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    width: 90%;
+    padding: 35px 300px;  /* Adjust padding to give space inside the footer */
+    border-top: 1px solid #AA4137;
+    justify-content: center;
+    
+    gap: 10px;    
+    
+}
+
+.footpro p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #AA4137;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+
+}
+
+h2 {
+    display: flex;
+    height: 61px;
+    padding: 16px 0px;
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+    border-radius: 15px;
+    border-top: 2px solid #AA4137;
+    border-bottom: 2px solid #AA4137;
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: 20px;
+    padding: 4px 0 4px 16px;
+    border-left: 8px solid #212121;
+    margin-bottom: 20px;
+}
+
+.contents-area {
+    display: flex;
+    gap: 40px;
+}
+
+.left-area , .right-area {
+    width: 400px;
+}
+.thai {
+    display: flex;
+   padding-right: 60px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+.contents {
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
+#profile {
+    margin-bottom: 80px;
+    display: flex;
+    padding: 10px 0px;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+    
+}
+
+#profile p {
+    margin: 0; /* Remove any extra margin */
+    padding: 0; /* Remove any extra padding */
+    line-height: 1.5; /* Set a reasonable line height */
+}
+
+
+#profile img {
+    display: block;
+    margin: auto;
+    border-radius: 15px;
+}
+
+#favorite {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.my-name {
+    font-size: 24px;
+    text-align: center;
+    margin: 40px 0;
+    
+}
+
+.my-name rt{
+    margin-bottom: 4px;
+}
+
+.my-intro {
+    width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    
+}
+.pic {
+    border-radius: 15px;
+}
+/* iframe {
+maxwidth for image size */
+.profile-page #header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.top {
+    display: flex;
+    padding: 30px 150px 30px 100px;
+    justify-content: space-between;
+    align-items: center;
+    align-self: stretch;
+}
+
+.top img {
+    width: 469px;
+    height: 100px;
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+nav ul {
+    list-style-type: none; /* Removes bullets */
+    padding: 0; /* Removes any default padding */
+    margin: 0; /* Removes any default margin */
+}
+.main-nav a {
+    display: flex;
+    padding: 10px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    background: #AA4137;
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Indie Flower";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+footer {
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    width: 80%;
+    padding: 20px 30px;  /* Adjust padding to give space inside the footer */
+    border-top: 1px solid #AA4137;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;    
+    margin: auto;
+}
+
+footer a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #AA4137;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    margin-left: 200px;
+}
+footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    color: #AA4137;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-right: 200px;
+}
+
+footer p,
+footer a {
+    color: #AA4137;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center; /* Ensure text is centered */
+    margin: 0; /* Remove any default margins */
+}
+
+/*----------------------home-------------------------------*/
+
+html, body {
+    overflow-x: hidden;
+}
+
+.home-page {
+    background: #FFF6E4;
+}
+
+.home-page main {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;   
+    
+}
+
+.home-page #header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;
+}
+
+.banner {
+    display: flex;
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: auto;
+}
+.banner img {
+    max-width: 100%; /* Ensures the image fits within the container */
+    height: auto; /* Maintains aspect ratio */
+}
+
+.about-section {
+    display: flex;
+    height: 620px;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    margin-top: 80px;
+}
+
+.topic-about {
+    display: flex;
+    width: 100%;
+    height: 99px;
+    padding: 30px 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    flex-shrink: 0;
+    margin: auto;
+}
+.context {
+    display: flex;
+    width: 1156px;
+    align-items: center;
+    gap: 53px;
+}
+.about {
+    display: flex;
+    padding: 50px 50px 0px 50px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+button {
+    display: inline-flex;
+    width: 130px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #AA4137;
+    background: #AA4137;
+    margin: 20px auto;
+    
+}
+
+button a {
+    text-decoration: none;
+    color: #FFF;
+    font-family: "Indie Flower";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+    text-decoration: none;
+}
+
+.work-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+    
+    position: relative; /* Ensures content is laid out properly */
+    overflow: visible; /* Ensure overflow is visible */
+    
+}
+
+.work-section .topic img{
+    display: flex;
+    margin: auto;
+    padding: 30px 55px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.work-pages {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    align-self: stretch;
+    width: 100%;
+    overflow: visible; /* Ensure overflow is visible */
+   
+}
+
+
+/* Slider itself (holds all images) */
+.slider .work-pages{
+    display: flex;
+    flex-wrap: nowrap; /* Prevent images from wrapping */
+    animation: slide 20s linear infinite; /* Infinite slide effect */
+    width: 100%;
+    
+}
+/* Speeding up AOS animations */
+[data-aos="fade-up"], [data-aos="flip-left"], [data-aos="zoom-in-up"] {
+    transition-duration: 0.5s !important;  /* Faster duration */
+    transition-delay: 0s !important;      /* No delay */
+}
+
+/* Individual images inside the slider */
+.box {
+    flex-shrink: 0; /* Prevent images from shrinking */
+    width: 400px; /* Adjust width as needed */
+    height: auto; /* Maintain image aspect ratio */
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slide {
+    0% {
+        transform: translateX(0%); /* Start at the beginning */
+    }
+    50% {
+        transform: translateX(-50%); /* Move through all images */
+    }
+    100% {
+        transform: translateX(-100%); /* Complete the full transition */
+    }
+}
+
+
+
+.work-section button:hover {
+    background-color: #8A2E2B;
+}
+
+.work-section button a:hover {
+    color: #FFF;
+}
+
+.work-section button a {
+    display: block;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.contact-section {
+    display: flex;
+    width: 386px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 60px;
+    margin-bottom: 80px;
+}
+
+.contact .topic img {
+    display: flex;
+    
+    padding: 30px 55px;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    align-self: stretch;
+}
+
+.user-name {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.user-email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+.user-message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    align-self: stretch;
+}
+
+input {
+    display: flex;
+    height: 36px;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    align-self: stretch;
+    border-radius: 15px;
+    border: 1px solid #AA4137;
+    background: #FFF;
+}
+
+.user-message input {
+    display: flex;
+    height: 100px;
+    padding: 10px;
+    align-items: flex-start;
+    gap: 10px;
+    align-self: stretch;
+}
+
+form p {
+    color: #AA4137;
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+.name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+form button {
+    display: inline-flex;
+    width: 130px;
+    height: 49px;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    border: 1px solid #AA4137;
+    background: #AA4137;
+    margin: 20px auto;
+}
+.home-footer {
+    display: flex;
+    align-items: center;  /* Vertically center the items */
+    width: 80%;
+    padding: 20px 30px;  /* Adjust padding to give space inside the footer */
+    border-top: 1px solid #AA4137;
+    justify-content: space-between; /* Create space between items */
+    gap: 20px;  /* Adjust gap between footer elements */
+    margin: auto;
+}
+
+.home-footer p, .home-footer a {
+    color: #AA4137;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center; /* Ensure text is centered */
+    margin: 0; /* Remove any default margins */
+}
+
+.home-footer a {
+    margin-left: 20px; /* Add a little space to the left of the 'Back to top' link */
+}
+
+.home-footer p {
+    margin-right: 20px; /* Add a little space to the right of the copyright text */
+}
+
+/*-----------------------------works-------------------------*/
+
+.works-page {
+    background: #FFF6E4;
+}
+.wa {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 20px;  /* Adjusts the overall padding of the .wa container */
+}
+
+.wa a {
+    margin-left: 20px;  /* Move the arrow slightly away from the left */
+}
+
+.wa .topic {
+    display: flex;
+    justify-content: center;  /* Center the work image */
+    width: 100%;  /* Take full width */
+    align-items: center;
+    height: auto;
+}
+
+.wa .topic img {
+    max-width: 100%;  /* Prevent image from overflowing */
+    display: block;  /* Make sure the image is block-level */
+    margin-right: 230px;  /* Center the image */
+}
+
+.back-arrow {
+    width: 152.729px;
+    height: 152.729px;
+    transform: rotate(-29.195deg);
+    flex-shrink: 0;
+}
+
+.work-list {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+}
+
+.row1, .row2 , .row3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    align-self: stretch;
+}
+
+.work-list li{
+    width: 350px;
+    height: 250px;
+    border-radius: 15px;
+    border: 1px solid #AA4137;
+    display: inline-block;
+}
+
+.work-list img {
+    max-width: 100%;
+}
+
+.works-page main {
+    margin-bottom: 150px;
+}
+/*-------------mobile responsiveness---------------*/
+
+/* Tablet: Adjusting Navigation Menu */
